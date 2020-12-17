@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <AnimatedDropdown 
         title="MENU"
-        list={['1','2','3','4','5']}
+        list={[{value: '1', id: 1}, {value: '2', id: 2}, {value: '3', id: 3}, {value: '4', id: 4}]}
       />
     </div>
   );
