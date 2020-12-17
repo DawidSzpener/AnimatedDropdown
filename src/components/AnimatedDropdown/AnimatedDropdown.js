@@ -18,8 +18,10 @@ const AnimatedDropdown = (props) => {
 
   return (
     <div className="AnimatedDropdown">
-      <div className="AnimatedDropdown__title">{props.title}</div>
-      <div className="AnimatedDropdown__expand-button" onClick={() => showDropDown()}>{'>>'}</div>
+      <div className="AnimatedDropdown__title">
+        {props.title}
+        <div className="AnimatedDropdown__expand-button" onClick={() => showDropDown()}>{'>>'}</div>
+      </div>
       <div className="AnimatedDropdown__list" style={{ display: showList ? "block" : "none" }}>
         {list.map(item => (
           <div className="AnimatedDropdown__item" key={item.id} onClick={() => selectItem(item)}>

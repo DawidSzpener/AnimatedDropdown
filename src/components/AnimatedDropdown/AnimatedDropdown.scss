@@ -1,0 +1,34 @@
+.AnimatedDropdown {
+  height: 30px;
+  border: 1px solid #aaa;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  &__title {
+
+  }
+  &__expand-button {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background: #aaaaaa;
+    right: 0;
+    top: 0;
+  }
+  &__list {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 4px 12px;
+    vertical-align: middle;
+  }
+  &__item {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 6px;
+    padding-left: 20px;
+  }
+}
