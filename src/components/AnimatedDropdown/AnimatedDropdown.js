@@ -25,14 +25,25 @@ const AnimatedDropdown = (props) => {
   } else {
     shape = "AnimatedDropdown__header--circle"
   }
+
+  let header = null
+
+  if(props.shape === 'circle') {
+    header = 
+    <div className="AnimatedDropdown__header" onClick={() => showDropDown()}>
+      <img className={shape + "--title"} src={props.picture} alt="foto"/>
+    </div>
+  } else {
+    header =
+    <div className="AnimatedDropdown__header" onClick={() => showDropDown()}>
+      <div className={shape + "--title"} >{props.title}</div>
+    </div>
+  }
   
 
   return (
     <div className={classes.join(' ')}>
-      <div className="AnimatedDropdown__header">
-        <div className={shape + "--title"} >{props.title}</div>
-        <div className={shape + "--expand-button"} onClick={() => showDropDown()}>{'>>'}</div>
-      </div>
+      {header}
       <div
         className={props.shape === "circle" ? 'AnimatedDropdown__list AnimatedDropdown__list--circle' : 'AnimatedDropdown__list AnimatedDropdown__list--rectangle'}
         style={{ display: showList ? "block" : "none" }}>
