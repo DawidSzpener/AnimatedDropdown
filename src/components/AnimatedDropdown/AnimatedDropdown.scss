@@ -17,6 +17,28 @@
     height: 110px;
     border-radius: 50%;
   }
+  &__arrow {
+    border: 1em solid transparent;
+    border-bottom: none;
+    border-top-color: #ddd;
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+
+    &--circle {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid #ddd;
+    }
+    &--rectangle {
+    }
+  }
   &__header {
     cursor: pointer;
 
@@ -57,8 +79,12 @@
     vertical-align: middle;
 
     &--circle {
-      margin-left: -45px;
-      margin-top: 30px;
+      margin-left: -65px;
+      margin-top: -5px;
+      width: 240px;
+
+      &__arrow {
+      }
     }
     &--rectangle {
       margin-top: 20px;

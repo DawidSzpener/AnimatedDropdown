@@ -39,11 +39,21 @@ const AnimatedDropdown = (props) => {
       <div className={shape + "--title"} >{props.title}</div>
     </div>
   }
+
+  let arrow = null
+  if(props.shape === 'circle' && showList) {
+    arrow = <div className="AnimatedDropdown__arrow AnimatedDropdown__arrow--circle"/>
+  } else if(props.shape === 'rectangle' && showList){ 
+    arrow = <div className="AnimatedDropdown__arrow AnimatedDropdown__arrow--rectangle"/>
+  } else {
+    arrow = null
+  }
   
 
   return (
     <div className={classes.join(' ')}>
       {header}
+      {arrow}
       <div
         className={props.shape === "circle" ? 'AnimatedDropdown__list AnimatedDropdown__list--circle' : 'AnimatedDropdown__list AnimatedDropdown__list--rectangle'}
         style={{ display: showList ? "block" : "none" }}>
