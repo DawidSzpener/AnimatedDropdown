@@ -48,14 +48,21 @@ const AnimatedDropdown = (props) => {
   } else {
     arrow = null
   }
-  
+
+  let headerPosition = ''
+  if(props.headerPosition === "right") {
+    headerPosition = '--right'
+  } else {
+    headerPosition = ''
+  }
+  console.log(props)
 
   return (
     <div className={classes.join(' ')}>
       {header}
       {arrow}
       <div
-        className={props.shape === "circle" ? 'AnimatedDropdown__list AnimatedDropdown__list--circle' : 'AnimatedDropdown__list AnimatedDropdown__list--rectangle'}
+        className={props.shape === "circle" ? 'AnimatedDropdown__list AnimatedDropdown__list--circle' : 'AnimatedDropdown__list AnimatedDropdown__list--rectangle'+ headerPosition}
         style={{ display: showList ? "block" : "none" }}>
         {list.map(item => (
           <div className="AnimatedDropdown__item" key={item.id} onClick={() => selectItem(item)}>
