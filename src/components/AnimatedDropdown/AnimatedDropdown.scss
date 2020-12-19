@@ -43,6 +43,8 @@
       border-right: 15px solid transparent;
       border-top: 15px solid transparent;
       border-bottom: 15px solid #ddd;
+      animation: slide-in-blurred 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
     }
     &--rectangle {
     }
@@ -80,6 +82,7 @@
       margin-left: -65px;
       margin-top: -5px;
       width: 240px;
+      animation: slide-in-blurred 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
       &__arrow {
       }
@@ -87,10 +90,12 @@
     &--rectangle {
       margin-top: 10px;
       margin-left: -3px;
+      animation: slide-in-blurred-left 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
       &--right {
         margin-top: 10px;
         margin-left: -77px;
+        animation: slide-in-blurred-right 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
       }
     }
   }
@@ -128,4 +133,38 @@
        url('./orbitron-variablefont_wght-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@keyframes slide-in-blurred {
+  0% {
+    transform: translateY(-50px) scaleY(1) scaleX(0.2);
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-left {
+  0% {
+    transform: translateY(-50px) translateX(-50px) scaleY(1) scaleX(0.2);
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-right {
+  0% {
+    transform: translateY(-50px) translateX(50px)  scaleY(1) scaleX(0.2);
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    opacity: 1;
+  }
 }

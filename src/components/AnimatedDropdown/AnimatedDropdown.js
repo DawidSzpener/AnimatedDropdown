@@ -55,7 +55,6 @@ const AnimatedDropdown = (props) => {
   } else {
     headerPosition = ''
   }
-  console.log(props)
 
   return (
     <div className={classes.join(' ')}>

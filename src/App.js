@@ -24,7 +24,6 @@ function App() {
       <AnimatedDropdown 
         picture={foto}
         shape='circle'
-        title="MENU"
         list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Logout', id: 4}]}
       />
       </div>
