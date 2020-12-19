@@ -10,7 +10,7 @@ function App() {
       <AnimatedDropdown 
         shape='rectangle'
         title="MENU"
-        list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Logout', id: 4}]}
+        list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}
       />
       </div>
       <div style={{display: 'inline-block', marginLeft: '370px' }}>
@@ -18,13 +18,13 @@ function App() {
         headerPosition="right"
         shape='rectangle'
         title="MENU"
-        list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Logout', id: 4}]}
+        list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}
       />
       </div>      <div style={{float: 'left', marginLeft: '750px', marginTop: '-65px' }}>
       <AnimatedDropdown 
         picture={foto}
         shape='circle'
-        list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Logout', id: 4}]}
+        list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}
       />
       </div>
     </div>

@@ -5,7 +5,7 @@ import './AnimatedDropdown.scss'
 const AnimatedDropdown = (props) => {
   const [list, setList] = useState(props.list)
   const [showList, setShowList] = useState(false)
-  const [selectedItem, setSelectedItem] = useState(props.list[0])
+  const [selectedItem, setSelectedItem] = useState(null)
 
   function showDropDown() {
     setShowList(!showList)
@@ -52,9 +52,7 @@ const AnimatedDropdown = (props) => {
   let headerPosition = ''
   if(props.headerPosition === "right") {
     headerPosition = '--right'
-  } else {
-    headerPosition = ''
-  }
+  } 
 
   return (
     <div className={classes.join(' ')}>
