@@ -2,7 +2,7 @@
 
 ## DEMO 
 
-![demo]()
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/demo.gif)
 
 ## INSTALLATION 
 
@@ -16,7 +16,7 @@
 
 #### MANDATORY PROPS:
 - ```list``` this prop takes an array of objects eg.```[{value: 'first item', id: 1}, ...]```
-![demo]()
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/list.png)
 
 - ```shape='rectangle'``` or ```shape='circle'``` self explanatory
 
@@ -24,12 +24,12 @@
 
 If ```shape='circle'``` :
 - ```picture``` this prop takes path to your image
-![demo]()
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/circle.png)
 
 If ```shape='rectangle'```:
 - ```headerPosition="right"``` default is left, if shape === ```circle``` this does nothing
 - ```title="MENU"``` text displayed in the header
-![demo]()
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/rectangle.png)
 
 - theme ```black``` is default, ```red```, ```green```, ```blue```
 ![demo]()
