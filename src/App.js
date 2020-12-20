@@ -8,23 +8,35 @@ function App() {
     <div className="App">
       <div style={{display: 'inline-block', marginLeft: '100px'}}>
       <AnimatedDropdown 
-        shape='rectangle'
+        shape="rectangle"
+        theme="green"
         title="MENU"
         list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}
       />
       </div>
       <div style={{display: 'inline-block', marginLeft: '370px' }}>
       <AnimatedDropdown 
+        shape="rectangle"
+        theme="green"
         headerPosition="right"
-        shape='rectangle'
         title="MENU"
-        list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}
+        list={[
+          {value: 'Profile', id: 1},
+          {value: 'Settings', id: 2},
+          {value: 'Help', id: 3},
+          {value: 'Log out', id: 4}]}
       />
-      </div>      <div style={{float: 'left', marginLeft: '750px', marginTop: '-65px' }}>
+      </div>
+      <div style={{float: 'left', marginLeft: '750px', marginTop: '-65px' }}>
       <AnimatedDropdown 
+        shape="circle"
+        theme="green"
         picture={foto}
-        shape='circle'
-        list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}
+        list={[
+          {value: 'Profile', id: 1},
+          {value: 'Settings', id: 2},
+          {value: 'Help', id: 3},
+          {value: 'Log out', id: 4}]}
       />
       </div>
     </div>

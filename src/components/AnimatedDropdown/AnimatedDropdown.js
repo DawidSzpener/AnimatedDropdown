@@ -18,6 +18,7 @@ const AnimatedDropdown = (props) => {
 
   let classes = ["AnimatedDropdown"]
   if(props.shape){classes.push(`AnimatedDropdown--${props.shape}`)}
+  if(props.theme){classes.push(`AnimatedDropdown--${props.theme}`)}
 
   let shape = ""
   if(props.shape === 'rectangle'){
@@ -52,7 +53,12 @@ const AnimatedDropdown = (props) => {
   let headerPosition = ''
   if(props.headerPosition === "right") {
     headerPosition = '--right'
-  } 
+  }
+
+  let theme = "black"
+  if(props.theme) {
+    theme = props.theme
+  }
 
   return (
     <div className={classes.join(' ')}>
@@ -62,7 +68,7 @@ const AnimatedDropdown = (props) => {
         className={props.shape === "circle" ? 'AnimatedDropdown__list AnimatedDropdown__list--circle' : 'AnimatedDropdown__list AnimatedDropdown__list--rectangle'+ headerPosition}
         style={{ display: showList ? "block" : "none" }}>
         {list.map(item => (
-          <div className="AnimatedDropdown__item" key={item.id} onClick={() => selectItem(item)}>
+          <div className={"AnimatedDropdown__item AnimatedDropdown__item--" + theme} key={item.id} onClick={() => selectItem(item)}>
             <div style={{paddingTop: "12px"}}>{item.value}</div>
           </div>
         ))}

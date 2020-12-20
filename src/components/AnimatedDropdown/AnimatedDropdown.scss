@@ -1,5 +1,5 @@
 .AnimatedDropdown {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 246, 246);
   transition: all 0.7s ease;
   text-align: center;
   user-select: none;
@@ -13,24 +13,40 @@
   &:hover {
     border: 3px solid rgb(1, 5, 3);
   }
-  
-  &--rectangle {
-    border: 3px solid #ddd;
-    width: 120px;
-    height: 40px;
-    border-radius: 10px;
+  &--blue {
+    border: 3px solid rgb(132, 144, 235);
+    &:hover {
+      border: 3px solid rgb(50, 65, 172);
+    }
+  }
+  &--red {
+    border: 3px solid rgb(235, 132, 132);
+    &:hover {
+      border: 3px solid rgb(248, 3, 3);
+    }
+  }
+  &--black {
+    border: 3px solid rgb(1, 5, 3);
     &:hover {
       border: 3px solid rgb(1, 5, 3);
     }
   }
+  &--green {
+    border: 3px solid rgb(81, 194, 81);
+    &:hover {
+      border: 3px solid rgb(1, 122, 11);
+    }
+  }
+  
+  &--rectangle {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+  }
   &--circle {
-    border: 3px solid rgb(255, 255, 255);
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    &:hover {
-      border: 3px solid rgb(1, 5, 3);
-    }
   }
   &__arrow {
     border: 1em solid transparent;
@@ -52,8 +68,6 @@
       border-bottom: 15px solid #ddd;
       animation: slide-in-blurred 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
-    }
-    &--rectangle {
     }
   }
   &__header {
@@ -91,8 +105,6 @@
       width: 240px;
       animation: slide-in-blurred 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
-      &__arrow {
-      }
     }
     &--rectangle {
       margin-top: 10px;
@@ -106,6 +118,7 @@
       }
     }
   }
+
   &__item {
     border-bottom: 1px solid #ddd;
     border-left: 3px solid #ddd;
@@ -115,15 +128,7 @@
     text-align: center;
     cursor: pointer;
     transition: all 0.7s ease;
-
-    &--fading {   
-      margin-top: 70px;
-      cursor: default;
-      transition: all 0 ease;
-      width: 200px;
-      border-radius: 20px;
-    }
-
+    
     &:first-child {
       border-top: 3px solid #ddd;
       border-radius: 20px 20px 0 0;
@@ -135,9 +140,97 @@
     &:hover {
       background-color: rgb(2, 3, 2);
       color: white;
+    } 
+
+    &--blue {
+      border-bottom: 1px solid rgb(132, 144, 235);
+      border-left: 3px solid rgb(132, 144, 235);
+      border-right: 3px solid rgb(132, 144, 235);
+
+      &:hover {
+        background-color: rgb(50, 65, 172);
+        color: white;
+        border-bottom-color:rgb(3, 32, 248);
+        border-left-color: rgb(3, 32, 248);
+        border-right-color: rgb(3, 32, 248);
+      }
+      &:first-child {
+        border-top: 3px solid rgb(132, 144, 235);
+        &:hover {
+          border-top-color: rgb(3, 32, 248);
+        }
+      }
+      &:last-child {
+        border-bottom: 3px solid rgb(132, 144, 235);
+        &:hover {
+          border-bottom-color: rgb(3, 32, 248);
+        }
+      }
+    } 
+    &--red {
+      border-bottom: 1px solid rgb(235, 132, 132);
+      border-left: 3px solid rgb(235, 132, 132);
+      border-right: 3px solid rgb(235, 132, 132);
+
+      &:hover {
+        background-color: rgb(172, 50, 50);
+        color: white;
+        border-bottom-color:rgb(248, 3, 3);
+        border-left-color: rgb(248, 3, 3);
+        border-right-color: rgb(248, 3, 3);
+      }
+      &:first-child {
+        border-top: 3px solid rgb(235, 132, 132);
+        &:hover {
+          border-top-color: rgb(248, 3, 3);
+        }
+      }
+      &:last-child {
+        border-bottom: 3px solid rgb(235, 132, 132);
+        &:hover {
+          border-bottom-color: rgb(248, 3, 3);
+        }
+      }
+    }   
+    &--green {
+      border-bottom: 1px solid rgb(81, 194, 81);
+      border-left: 3px solid rgb(81, 194, 81);
+      border-right: 3px solid rgb(81, 194, 81);
+
+      &:hover {
+        background-color: rgb(50, 172, 50);
+        color: white;
+        border-bottom-color:rgb(1, 122, 11);
+        border-left-color: rgb(1, 122, 11);
+        border-right-color: rgb(1, 122, 11);
+      }
+      &:first-child {
+        border-top: 3px solid rgb(81, 194, 81);
+        &:hover {
+          border-top-color: rgb(1, 122, 11);
+        }
+      }
+      &:last-child {
+        border-bottom: 3px solid rgb(81, 194, 81);
+        &:hover {
+          border-bottom-color: rgb(1, 122, 11);
+        }
+      }
     }
-    &:active {
-      background-color: rgb(6, 182, 85);
+
+    &--black {
+      &:first-child {
+        border-top: 3px solid #ddd;
+        border-radius: 20px 20px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 20px 20px;
+        border-bottom: 3px solid #ddd;
+      }
+      &:hover {
+        background-color: rgb(2, 3, 2);
+        color: white;
+      } 
     }
   }
 }

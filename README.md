@@ -6,7 +6,7 @@
 
 ## INSTALLATION 
 
-- clonse this repo
+- clone this repo
 - extract ```AnimatedDropdown``` folder to your projects directory
 - import ```AnimatedDropdown``` file wherever you want to use it ```import AnimatedDropdown from '*path'```
 - you need to have sass installed as one of your projects dependency ```npm install sass```
