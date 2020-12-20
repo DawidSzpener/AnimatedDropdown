@@ -32,10 +32,18 @@ If ```shape='rectangle'```:
 ##### Theme
 
 -```black``` (default)
+
 ![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/black.gif)
+
 - ```green```
+
 ![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/green.gif)
+
 - ```red```
+
 ![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/red.gif)
+
 - ```blue```
+
 ![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/blue.gif)
+
