@@ -57,6 +57,18 @@
     display: inline-block;
     position: relative;
     bottom: 5px;
+    &--blue{
+      border-top-color: rgb(132, 144, 235);
+    }
+    &--red{
+      border-top-color: rgb(235, 132, 132);
+    }
+    &--black{
+      border-top-color: #ddd;
+    }
+    &--green{
+      border-top-color: rgb(81, 194, 81);
+    }
 
     &--circle {
       content: "";
@@ -67,7 +79,18 @@
       border-top: 15px solid transparent;
       border-bottom: 15px solid #ddd;
       animation: slide-in-blurred 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-
+      &--blue{
+        border-bottom-color: rgb(132, 144, 235);
+      }
+      &--red{
+        border-bottom-color: rgb(235, 132, 132);
+      }
+      &--black{
+        border-bottom-color: #ddd;
+      }
+      &--green{
+        border-bottom-color: rgb(81, 194, 81);
+      }
     }
   }
   &__header {

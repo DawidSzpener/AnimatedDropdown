@@ -16,8 +16,6 @@
 
 #### MANDATORY PROPS:
 - ```list``` this prop takes an array of objects eg.```[{value: 'first item', id: 1}, ...]```
-![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/list.png)
-
 - ```shape='rectangle'``` or ```shape='circle'``` self explanatory
 
 #### Usable props change depending on ```shape``` prop

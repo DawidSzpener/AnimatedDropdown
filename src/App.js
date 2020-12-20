@@ -9,7 +9,7 @@ function App() {
       <div style={{display: 'inline-block', marginLeft: '100px'}}>
       <AnimatedDropdown 
         shape="rectangle"
-        theme="green"
+        theme="blue"
         title="MENU"
         list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}
       />
@@ -17,7 +17,7 @@ function App() {
       <div style={{display: 'inline-block', marginLeft: '370px' }}>
       <AnimatedDropdown 
         shape="rectangle"
-        theme="green"
+        theme="blue"
         headerPosition="right"
         title="MENU"
         list={[
@@ -30,7 +30,7 @@ function App() {
       <div style={{float: 'left', marginLeft: '750px', marginTop: '-65px' }}>
       <AnimatedDropdown 
         shape="circle"
-        theme="green"
+        theme="blue"
         picture={foto}
         list={[
           {value: 'Profile', id: 1},

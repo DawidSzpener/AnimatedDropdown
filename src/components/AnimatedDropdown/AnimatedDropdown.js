@@ -16,9 +16,14 @@ const AnimatedDropdown = (props) => {
     setShowList(false)
   }
 
+  let theme = "black"
+  if(props.theme) {
+    theme = props.theme
+  }
+
   let classes = ["AnimatedDropdown"]
   if(props.shape){classes.push(`AnimatedDropdown--${props.shape}`)}
-  if(props.theme){classes.push(`AnimatedDropdown--${props.theme}`)}
+  if(props.theme){classes.push(`AnimatedDropdown--${theme}`)}
 
   let shape = ""
   if(props.shape === 'rectangle'){
@@ -43,9 +48,9 @@ const AnimatedDropdown = (props) => {
 
   let arrow = null
   if(props.shape === 'circle' && showList) {
-    arrow = <div className="AnimatedDropdown__arrow AnimatedDropdown__arrow--circle"/>
+    arrow = <div className={"AnimatedDropdown__arrow AnimatedDropdown__arrow--circle AnimatedDropdown__arrow--circle--" + theme}/>
   } else if(props.shape === 'rectangle' && showList){ 
-    arrow = <div className="AnimatedDropdown__arrow AnimatedDropdown__arrow--rectangle"/>
+    arrow = <div className={"AnimatedDropdown__arrow AnimatedDropdown__arrow--" + theme}/>
   } else {
     arrow = null
   }
@@ -53,11 +58,6 @@ const AnimatedDropdown = (props) => {
   let headerPosition = ''
   if(props.headerPosition === "right") {
     headerPosition = '--right'
-  }
-
-  let theme = "black"
-  if(props.theme) {
-    theme = props.theme
   }
 
   return (
