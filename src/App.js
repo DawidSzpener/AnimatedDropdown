@@ -9,7 +9,6 @@ function App() {
       <div style={{display: 'inline-block', marginLeft: '100px'}}>
       <AnimatedDropdown 
         shape='rectangle'
-        headerPosition="left"
         title="MENU"
         list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}
       />
@@ -23,7 +22,6 @@ function App() {
       />
       </div>      <div style={{float: 'left', marginLeft: '750px', marginTop: '-65px' }}>
       <AnimatedDropdown 
-        headerPosition="left"
         picture={foto}
         shape='circle'
         list={[{value: 'Profile', id: 1}, {value: 'Settings', id: 2}, {value: 'Help', id: 3}, {value: 'Log out', id: 4}]}

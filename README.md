@@ -14,15 +14,13 @@
 
 ## USAGE
 
-Usable props change depending on ```shape``` prop
-MANDATORY PROPS:
+#### MANDATORY PROPS:
 - ```list``` this prop takes an array of objects eg.```[{value: 'first item', id: 1}, ...]```
 ![demo]()
 
 - ```shape='rectangle'``` or ```shape='circle'``` self explanatory
-![demo]()
 
-PROPS BASED ON ```SHAPE``` PROP
+#### Usable props change depending on ```shape``` prop
 
 If ```shape='circle'``` :
 - ```picture``` this prop takes path to your image
@@ -30,8 +28,6 @@ If ```shape='circle'``` :
 
 If ```shape='rectangle'```:
 - ```headerPosition="right"``` default is left, if shape === ```circle``` this does nothing
-![demo]()
-
 - ```title="MENU"``` text displayed in the header
 ![demo]()
 
