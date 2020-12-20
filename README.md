@@ -2,7 +2,7 @@
 
 ## DEMO 
 
-![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/demo.gif)
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/black.gif)
 
 ## INSTALLATION 
 
@@ -29,8 +29,13 @@ If ```shape='rectangle'```:
 - ```title="MENU"``` text displayed in the header
 ![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/rectangle.png)
 
-- theme ```black``` is default, ```red```, ```green```, ```blue```
-![demo]()
-![demo]()
-![demo]()
-![demo]()
+##### Theme
+
+-```black``` (default)
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/black.gif)
+- ```green```
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/green.gif)
+- ```red```
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/red.gif)
+- ```blue```
+![demo](https://github.com/DawidSzpener/AnimatedDropdown/blob/main/src/assets/images/blue.gif)
